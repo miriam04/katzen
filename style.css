@@ -13,11 +13,14 @@ header,
     -o-background-size: cover;
     background-size: cover;
 }
-.card {
-width: 18rem;
-
-
+.column {
+width: 25%;
 }
+
+.card {
+    height: 100%;
+}
+
 .alert {
 width: 300rem;
 }
