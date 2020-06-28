@@ -3,179 +3,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-  <link rel="icon" href="img/icon.png" type="image/x-icon">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="css/mdb.min.css">
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="style.css">
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Katzen</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
 
-    <div class="container">
-
-      <!-- Navbar brand -->
-      <a class="navbar-brand" href="index.html">Menü</a>
-
-      <!-- Collapse button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Collapsible content -->
-      <div class="collapse navbar-collapse" id="basicExampleNav">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Bilergallerie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pflege.html">Pflege</a>
-          </li>
-
-          <!-- Dropdown -->
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Kontakt</a>
-            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item"
-                href="https://www.google.com/maps?q=bzz+horgen&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj3l87euIjqAhXTwMQBHQUyDQEQ_AUoAXoECAsQAw"
-                target="_blank">Standort</a>
-              <a class="dropdown-item"
-                href="https://www.bzz.ch/kontakt/?gclid=CjwKCAjw_qb3BRAVEiwAvwq6VvTcpbBXSIBSt2UCXpEzX19ByMNrwbVaB0fyA4G--wTAqIr0DjglehoCm6UQAvD_BwE"
-                target="_blank">E-Mail</a>
-            </div>
-          </li>
-
-        </ul>
-        <!-- Links -->
-
-        <form class="form-inline">
-          <div class="md-form my-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          </div>
-        </form>
-      </div>
-      <!-- Collapsible content -->
-
-    </div>
-
-  </nav>
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    img {
-      vertical-align: middle;
-    }
-
-    /* Position the image container (needed to position the left and right arrows) */
-    .container {
-      position: relative;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-
-    /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-      cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 40%;
-      width: auto;
-      padding: 16px;
-      margin-top: -50px;
-      color: yellow;
-      font-weight: bold;
-      font-size: 20px;
-      border-radius: 0 3px 50px 0;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 50px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: lightgrey;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: black;
-      font-size: 20px;
-      padding: 20px 12px;
-      position: absolute;
-      top: 0;
-    }
-
-    /* Container for image text */
-    .caption-container {
-      text-align: center;
-      background-color: darkgrey;
-      padding: 2px 16px;
-      color: white;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Six columns side by side */
-    .column {
-      float: left;
-      width: 16.66%;
-    }
-
-    /* Add a transparency effect for thumnbail images */
-    .demo {
-      opacity: 0.6;
-    }
-
-    .active,
-    .demo:hover {
-      opacity: 1;
-    }
-  </style>
 </head>
 
 <body>
+  <header>
+  	<!--Navbar-->
+  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
 
-  <h2 style="text-align:center">Slideshow Gallery</h2>
+  	  <div class="container">
+
+  	    <!-- Navbar brand -->
+  	    <a class="navbar-brand" href="index.html">Katzen</a>
+
+  	    <!-- Collapse button -->
+  	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+  	      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+  	      <span class="navbar-toggler-icon"></span>
+  	    </button>
+
+  	    <!-- Collapsible content -->
+  	    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+  	      <!-- Links -->
+  	      <ul class="navbar-nav mr-auto">
+  	        <li class="nav-item active">
+  	          <a class="nav-link" href="index.html">Home
+  	            <span class="sr-only">(current)</span>
+  	          </a>
+  	        </li>
+  	        <li class="nav-item">
+  	          <a class="nav-link" href="gallery.html">Bildergallerie</a>
+  	        </li>
+  	        <li class="nav-item">
+  	          <a class="nav-link" href="pflege.html">Pflege</a>
+  	        </li>
+
+  	        <!-- Dropdown -->
+  	        <li class="nav-item dropdown">
+  	          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+  	            aria-expanded="false">Kontakt</a>
+  	          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+  	            <a class="dropdown-item" href="https://www.google.com/maps?q=bzz+horgen&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj3l87euIjqAhXTwMQBHQUyDQEQ_AUoAXoECAsQAw" target="_blank">Standort</a>
+  	            <a class="dropdown-item" href="https://www.bzz.ch/kontakt/?gclid=CjwKCAjw_qb3BRAVEiwAvwq6VvTcpbBXSIBSt2UCXpEzX19ByMNrwbVaB0fyA4G--wTAqIr0DjglehoCm6UQAvD_BwE" target="_blank">E-Mail</a>
+  	          </div>
+  	        </li>
+
+  	      </ul>
+  	      <!-- Links -->
+
+  	      <form class="form-inline">
+  	        <div class="md-form my-0">
+  	          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+  	        </div>
+  	      </form>
+  	    </div>
+  	    <!-- Collapsible content -->
+
+  	  </div>
+
+  	</nav>
+  	<!--/.Navbar-->
+  	<!--Mask-->
+  <div id="intro" class="view">
+
+    <div class="mask">
+
+    </div>
+
+  </div>
+
+  </header>
 
   <div class="container">
     <div class="mySlides">
@@ -273,7 +189,15 @@
       captionText.innerHTML = dots[slideIndex - 1].alt;
     }
   </script>
+  
+<p><div id="blackRow">&nbsp;</div></p>
 
+<iframe width="100%" 
+        height="100%" 
+        src="https://www.youtube.com/embed/-2syg10o3A0" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 </body>
 
 </html>
