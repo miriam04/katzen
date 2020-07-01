@@ -22,7 +22,7 @@ width: 25%;
     height: 100%;
 }
 
-.blackRow {
+#blackRow {
     margin: 0;
     padding: 0;
     height: 2px;
